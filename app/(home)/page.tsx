@@ -8,13 +8,14 @@ export default function Home() {
     <div>
       <Header></Header>
 
-      <h2>Ola, Miguel!</h2>
-      <p>{format(new Date(), "EEEE", {
-        locale: ptBR,
-        })}
-      </p>
-
+      <div className="px-5 pt-5">
+        <h2 className="text-xl font-bold">Ola, Miguel!</h2>
+        <p className="capitalize text-sm">
+          {format(new Date(), "EEEE', ' dd 'de' LLLL", {
+            locale: ptBR,
+          })}
+        </p>
+      </div>
     </div>
-    
   );
 }
